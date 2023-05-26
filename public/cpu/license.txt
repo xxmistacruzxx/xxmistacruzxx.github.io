@@ -1,0 +1,11 @@
+Model Information:
+* title:	[Old] INTEL Xeon W3565 LGA1366
+* source:	https://sketchfab.com/3d-models/old-intel-xeon-w3565-lga1366-0aed56c505ca452682793b233776dc73
+* author:	Хлюпич (https://sketchfab.com/foxplay382)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "[Old] INTEL Xeon W3565 LGA1366" (https://sketchfab.com/3d-models/old-intel-xeon-w3565-lga1366-0aed56c505ca452682793b233776dc73) by Хлюпич (https://sketchfab.com/foxplay382) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

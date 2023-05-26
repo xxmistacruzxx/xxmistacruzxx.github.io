@@ -1,6 +1,8 @@
 import React from "react";
-import { Canvas, useFrame } from "react-three-fiber";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 function Plane() {
   return (
@@ -38,6 +40,26 @@ function Box() {
   );
 }
 
+function Plant() {
+  const plant = useGLTF("/colocasia_potted/scene.gltf");
+  plant.scene.scale.set(35, 35, 35);
+  plant.scene.position.set(-1, -1, 0);
+
+  plant.scene.traverse(function (node) {
+    if (node.isMesh) node.castShadow = true;
+  });
+
+  const thisRef = React.useRef();
+
+  useFrame(() => {
+    if (thisRef.current) {
+      thisRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return <primitive ref={thisRef} object={plant.scene} />;
+}
+
 function Ball() {
   const thisRef = React.useRef();
 
@@ -53,6 +75,27 @@ function Ball() {
       <meshLambertMaterial attach="material" color="lightblue" />
     </mesh>
   );
+}
+
+function Cpu() {
+  const cpu = useGLTF("/cpu/scene.gltf");
+  cpu.scene.scale.set(0.13, 0.13, 0.13);
+  cpu.scene.position.set(7, 0, 0);
+  cpu.scene.rotation.set(Math.PI / 2, 0, 0);
+
+  cpu.scene.traverse(function (node) {
+    if (node.isMesh) node.castShadow = true;
+  });
+
+  const thisRef = React.useRef();
+
+  useFrame(() => {
+    if (thisRef.current) {
+      thisRef.current.rotation.z += 0.01;
+    }
+  });
+
+  return <primitive ref={thisRef} object={cpu.scene} castShadow />;
 }
 
 function Ring() {
@@ -75,6 +118,25 @@ function Ring() {
       <meshLambertMaterial attach="material" color="orange" />
     </mesh>
   );
+}
+
+function Piano() {
+  const piano = useGLTF("/piano/scene.gltf");
+  piano.scene.scale.set(0.18, 0.18, 0.18);
+  piano.scene.position.set(15, -1, 0);
+
+  piano.scene.traverse(function (node) {
+    if (node.isMesh) node.castShadow = true;
+  });
+
+  const thisRef = React.useRef();
+  useFrame(() => {
+    if (thisRef.current) {
+      thisRef.current.rotation.y += 0.01;
+    }
+  });
+
+  return <primitive ref={thisRef} object={piano.scene} castShadow />;
 }
 
 function ThisCamera({ cameraX, setCameraX }) {
@@ -105,20 +167,19 @@ function ThisCamera({ cameraX, setCameraX }) {
 
 function World({ cameraX, setCameraX }) {
   return (
-    <Canvas
-      colorManagement
-      shadows
-      style={{ position: "fixed", height: "100vh" }}
-    >
+    <Canvas shadows style={{ position: "fixed", height: "100vh" }}>
       {/* <OrbitControls /> */}
       <ThisCamera cameraX={cameraX} setCameraX={setCameraX} />
       <ambientLight intensity={0.1} />
       <pointLight castShadow position={[0, 2, 0]} />
       <SkySphere />
       <Plane />
-      <Box />
-      <Ball />
-      <Ring />
+      {/* <Box /> */}
+      <Plant />
+      {/* <Ball /> */}
+      <Cpu />
+      {/* <Ring /> */}
+      <Piano />
     </Canvas>
   );
 }
