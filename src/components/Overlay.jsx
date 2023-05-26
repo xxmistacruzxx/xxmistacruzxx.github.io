@@ -69,7 +69,6 @@ function Overlay({ cameraX, setCameraX }) {
 
   return (
     <>
-      <script src="/src/components/Overlay.js"></script>
       <div id="overlay">
         <ul id="navbar" className="nav nav-pills">
           <li className="nav-item">
@@ -119,7 +118,7 @@ function Overlay({ cameraX, setCameraX }) {
                 alignItems: "center",
               }}
             >
-              <img id="Me" src="/src/assets/Me.jpg" />
+              <img id="Me" src="/Me.jpg" />
             </div>
             <h1 id="myName">David Cruz</h1>
             <div id="myLinks">
@@ -130,7 +129,7 @@ function Overlay({ cameraX, setCameraX }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/src/assets/linkedin.png" />
+                <img src="/linkedin.png" />
               </a>
               <a
                 id="githubLink"
@@ -139,7 +138,7 @@ function Overlay({ cameraX, setCameraX }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/src/assets/github.png" />
+                <img src="/github.png" />
               </a>
               <a
                 id="resumeLink"
@@ -148,7 +147,7 @@ function Overlay({ cameraX, setCameraX }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/src/assets/pdf.png" />
+                <img src="/pdf.png" />
               </a>
               <a
                 id="emailLink"
@@ -157,7 +156,7 @@ function Overlay({ cameraX, setCameraX }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/src/assets/email.png" />
+                <img src="/email.png" />
               </a>
             </div>
 
@@ -169,7 +168,7 @@ function Overlay({ cameraX, setCameraX }) {
             </p>
             <h2>Education</h2>
             <MyCard
-              image={"/src/assets/stevens.jpg"}
+              image={"/stevens.jpg"}
               title={"Stevens Institute of Technology"}
               caption={"Bachelor of Science in Computer Science"}
               time={"Fall 2020 - Spring 2024"}
@@ -181,7 +180,7 @@ function Overlay({ cameraX, setCameraX }) {
             />
             <h2>Experience</h2>
             <MyCard
-              image={"/src/assets/dataStructures.jpg"}
+              image={"/dataStructures.jpg"}
               title={"Data Structures Course Assistant"}
               caption={"Stevens Institute of Technology"}
               time={"Spring 2023"}
@@ -192,7 +191,7 @@ function Overlay({ cameraX, setCameraX }) {
               isLeft={true}
             />
             <MyCard
-              image={"/src/assets/introductionToComputing.jpg"}
+              image={"/introductionToComputing.jpg"}
               title={"Introduction to Scientific Computing Course Assistant"}
               caption={"Stevens Institute of Technology"}
               time={"Fall 2022, Fall 2021"}
@@ -203,7 +202,7 @@ function Overlay({ cameraX, setCameraX }) {
               isLeft={false}
             />
             <MyCard
-              image={"/src/assets/computerArchitecture.jpg"}
+              image={"/computerArchitecture.jpg"}
               title={"Computer Organization & Programming Teaching Assistant"}
               caption={"Stevens Institute of Technology"}
               time={"Spring 2023, Spring 2022"}
