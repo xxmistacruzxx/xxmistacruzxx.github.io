@@ -64,7 +64,7 @@ function About() {
       </p>
       <h2>Education</h2>
       <MyCard
-        cardTopBackground={"#a32636"}
+        cardTopBackground={"rgba(163, 38, 54, .35)"}
         leftImage={"/stevens.png"}
         title={"Stevens Institute of Technology"}
         caption={"Bachelor of Science in Computer Science"}
@@ -77,7 +77,7 @@ function About() {
       />
       <h2>Experience</h2>
       <MyCard
-        cardTopBackground={"#4D4D4D"}
+        cardTopBackground={"rgba(77, 77, 77, .35)"}
         leftImage={"/stevens.png"}
         rightImage={"/tree.png"}
         title={"Data Structures Course Assistant"}
@@ -90,7 +90,7 @@ function About() {
         isLeft={true}
       />
       <MyCard
-        cardTopBackground={"#4D4D4D"}
+        cardTopBackground={"rgba(77, 77, 77, .35)"}
         leftImage={"/stevens.png"}
         rightImage={"/python.png"}
         title={"Introduction to Scientific Computing Course Assistant"}
@@ -103,7 +103,7 @@ function About() {
         isLeft={false}
       />
       <MyCard
-        cardTopBackground={"#4D4D4D"}
+        cardTopBackground={"rgba(77, 77, 77, .35)"}
         leftImage={"/stevens.png"}
         rightImage={"/cpu.png"}
         title={"Computer Organization & Programming Teaching Assistant"}

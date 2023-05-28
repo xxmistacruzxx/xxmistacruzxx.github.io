@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import $ from "jquery";
 import About from "./About";
+import Code from "./Code";
+import Music from "./Music";
 
 function Overlay({ cameraX, setCameraX }) {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -74,10 +76,10 @@ function Overlay({ cameraX, setCameraX }) {
             <About />
           </Carousel.Item>
           <Carousel.Item id="code">
-            <h1>WIP...</h1>
+            <Code />
           </Carousel.Item>
           <Carousel.Item id="music">
-            <h1>WIP...</h1>
+            <Music />
           </Carousel.Item>
         </Carousel>
       </div>

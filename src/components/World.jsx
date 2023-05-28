@@ -22,24 +22,6 @@ function SkySphere() {
   );
 }
 
-function Box() {
-  const thisRef = React.useRef();
-
-  useFrame(() => {
-    if (thisRef.current) {
-      thisRef.current.rotation.y += 0.01;
-      thisRef.current.rotation.z += 0.01;
-    }
-  });
-
-  return (
-    <mesh ref={thisRef} castShadow rotation={[Math.PI / 4, 0, 0]}>
-      <boxBufferGeometry attach="geometry" />
-      <meshLambertMaterial attach="material" color="hotpink" />
-    </mesh>
-  );
-}
-
 function Plant() {
   const plant = useGLTF("/colocasia_potted/scene.gltf");
   plant.scene.scale.set(35, 35, 35);
@@ -60,28 +42,11 @@ function Plant() {
   return <primitive ref={thisRef} object={plant.scene} />;
 }
 
-function Ball() {
-  const thisRef = React.useRef();
-
-  useFrame(() => {
-    if (thisRef.current) {
-      thisRef.current.rotation.y += 0.01;
-    }
-  });
-
-  return (
-    <mesh castShadow position={[8, 0, 0]}>
-      <sphereBufferGeometry attach="geometry" args={[0.75, 32, 16]} />
-      <meshLambertMaterial attach="material" color="lightblue" />
-    </mesh>
-  );
-}
 
 function Cpu() {
   const cpu = useGLTF("/cpu/scene.gltf");
   cpu.scene.scale.set(0.13, 0.13, 0.13);
   cpu.scene.position.set(7, 0, 0);
-  cpu.scene.rotation.set(Math.PI / 2, 0, 0);
 
   cpu.scene.traverse(function (node) {
     if (node.isMesh) node.castShadow = true;
@@ -91,33 +56,12 @@ function Cpu() {
 
   useFrame(() => {
     if (thisRef.current) {
-      thisRef.current.rotation.z += 0.01;
+      thisRef.current.rotation.z += -0.01;
+      thisRef.current.rotation.x = Math.PI / 2;
     }
   });
 
-  return <primitive ref={thisRef} object={cpu.scene} castShadow />;
-}
-
-function Ring() {
-  const thisRef = React.useRef();
-
-  useFrame(() => {
-    if (thisRef.current) {
-      thisRef.current.rotation.y += 0.01;
-    }
-  });
-
-  return (
-    <mesh
-      ref={thisRef}
-      castShadow
-      rotation={[0, Math.PI / 2, 0]}
-      position={[16, 0, 0]}
-    >
-      <torusBufferGeometry args={[0.4, 0.15, 16, 100]} />
-      <meshLambertMaterial attach="material" color="orange" />
-    </mesh>
-  );
+  return <primitive ref={thisRef} object={cpu.scene} />;
 }
 
 function Piano() {
@@ -139,9 +83,10 @@ function Piano() {
   return <primitive ref={thisRef} object={piano.scene} castShadow />;
 }
 
-function ThisCamera({ cameraX, setCameraX }) {
+function ThisCamera({ cameraX, setCameraX, windowWidth }) {
   const thisRef = React.useRef();
   const [actX, setActX] = React.useState(-4);
+  const [actZ, setActZ] = React.useState(-1);
   useFrame(() => {
     if (thisRef.current) {
       let calc = Math.abs(cameraX - thisRef.current.position.x);
@@ -153,23 +98,28 @@ function ThisCamera({ cameraX, setCameraX }) {
         }
       }
     }
+    if (windowWidth < 600) {
+      setActZ(0)
+    } else {
+      setActZ(-1)
+    }
   });
 
   return (
     <PerspectiveCamera
       makeDefault
       ref={thisRef}
-      position={[actX, 0, -1]}
+      position={[actX, 0, actZ]}
       rotation={[0, -Math.PI / 2, 0]}
     />
   );
 }
 
-function World({ cameraX, setCameraX }) {
+function World({ cameraX, setCameraX, windowWidth }) {
   return (
     <Canvas shadows style={{ position: "fixed", height: "100vh" }}>
       {/* <OrbitControls /> */}
-      <ThisCamera cameraX={cameraX} setCameraX={setCameraX} />
+      <ThisCamera cameraX={cameraX} setCameraX={setCameraX} windowWidth={windowWidth}/>
       <ambientLight intensity={0.1} />
       <pointLight castShadow position={[0, 2, 0]} />
       <SkySphere />
