@@ -17,7 +17,9 @@ function Code() {
           subCaption={
             "#next #react #nextui #axios #recharts #marked #cryptocompareapi #blockchainapi #etherscanapi"
           }
-          description={""}
+          description={
+            "CoinWizard is a website with various cryptocurrency related features, such as real-time market & blockchain viewing, real-time price conversions, and address lookups (for BTC & ETH).\nData is obtained using CryptoCompare API, Blockchain API, and Etherscan API.\n\nCoinWizard is a Next/React based website deployed using Vercel."
+          }
           links={[
             [
               "Go to Code",
@@ -36,7 +38,9 @@ function Code() {
           subCaption={
             "#discord.py #py-cord #requests #cryptocompareapi #blockchainapi #etherscanapi"
           }
-          description={""}
+          description={
+            "CoinWizard Bot is a Discord Bot with various cryptocurrency related commands, such as real-time market & blockchain viewing, real-time price conversions, and address lookups (for BTC & ETH).\nData is obtained using CryptoCompare API, Blockchain API, and Etherscan API.\n\nCoinWizard Bot is a discord.py/py-cord based Discord Bot."
+          }
           links={[
             [
               "Go to Code",
