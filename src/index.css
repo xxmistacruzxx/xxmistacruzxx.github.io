@@ -146,11 +146,23 @@ body {
     width: 100%;
     margin-left: 0px;
     min-width: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .myCard {
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 
 @media only screen and (min-width: 600px) {
   .myCard {
     width: 75%;
+  }
+  .cards > .myCard:nth-child(2n + 1) {
+    margin-left: 5%;
+  }
+  .cards > .myCard:nth-child(2n) {
+    margin-right: 5%;
+    margin-left: auto;
   }
 }

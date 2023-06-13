@@ -63,58 +63,73 @@ function About() {
         />
       </p>
       <h2>Education</h2>
-      <MyCard
-        cardTopBackground={"rgba(163, 38, 54, .35)"}
-        leftImage={"/stevens.png"}
-        title={"Stevens Institute of Technology"}
-        caption={"Bachelor of Science in Computer Science"}
-        subCaption={"Fall 2020 - Spring 2024"}
-        description={
-          "Studied at the Charles V. Schaefer, Jr. School of Engineering and Science.\n\n• GPA: 3.975\n• Awards: Dean's List (Fall 2020 - Spring 2023), Edwin A. Stevens Scholarship\n• Activities: Chi Psi Fraternity, Upsilon Pi Epsilon (Computing and Information International Honor Society)"
-        }
-        link={"https://www.stevens.edu/"}
-        isLeft={true}
-      />
+      <div className="cards">
+        <MyCard
+          cardTopBackground={"rgba(163, 38, 54, .35)"}
+          leftImage={"/stevens.png"}
+          title={"Stevens Institute of Technology"}
+          caption={"Bachelor of Science in Computer Science"}
+          subCaption={"Fall 2020 - Spring 2024"}
+          description={
+            "Studied at the Charles V. Schaefer, Jr. School of Engineering and Science.\n\n• GPA: 3.975\n• Awards: Dean's List (Fall 2020 - Spring 2023), Edwin A. Stevens Scholarship\n• Activities: Chi Psi Fraternity, Upsilon Pi Epsilon (Computing and Information International Honor Society)"
+          }
+          links={[
+            ["Go to University Page", "https://www.stevens.edu/", "primary"],
+          ]}
+        />
+      </div>
+
       <h2>Experience</h2>
-      <MyCard
-        cardTopBackground={"rgba(77, 77, 77, .35)"}
-        leftImage={"/stevens.png"}
-        rightImage={"/tree.png"}
-        title={"Data Structures Course Assistant"}
-        caption={"Stevens Institute of Technology"}
-        subCaption={"Spring 2023"}
-        description={`Operated as a "Data Structures Course Assistant" for Professor Abrar Alrumay.\n\n• Administered weekly recitations for students to reinforce data structures concepts and Java programming skills.\n• Hosted weekly office hours for data structures students to assist with conceptual, assignment, and/or logistical.\n• Assessed assignment submissions for Professor Abrar Alrumayh by performing various testing using JUnit.`}
-        link={
-          "https://stevens.smartcatalogiq.com/en/2022-2023/academic-catalog/courses/cs-computer-science/200/cs-284/"
-        }
-        isLeft={true}
-      />
-      <MyCard
-        cardTopBackground={"rgba(77, 77, 77, .35)"}
-        leftImage={"/stevens.png"}
-        rightImage={"/python.png"}
-        title={"Introduction to Scientific Computing Course Assistant"}
-        caption={"Stevens Institute of Technology"}
-        subCaption={"Fall 2022, Fall 2021"}
-        description={`Operated as an "Introduction to Scientific Computing Course Assistant" for Professor Edward Banduk.\n\n• Conducted weekly lab sections for students to reinforce basic computing concepts and Python programming skills.\n• Performed walkthroughs of coding exercises to assist students in understanding the practicality and use cases of numerous programming techniques.\n• Presented new class material to students to further their progress in the curriculum.`}
-        link={
-          "https://stevens.smartcatalogiq.com/2022-2023/academic-catalog/courses/cs-computer-science/100/cs-105/"
-        }
-        isLeft={false}
-      />
-      <MyCard
-        cardTopBackground={"rgba(77, 77, 77, .35)"}
-        leftImage={"/stevens.png"}
-        rightImage={"/cpu.png"}
-        title={"Computer Organization & Programming Teaching Assistant"}
-        caption={"Stevens Institute of Technology"}
-        subCaption={"Spring 2023, Spring 2022"}
-        description={`Operated as a "Computer Organization & Programming Teaching Assistant" for Professor Edward Banduk.\n\n• Managed Canvas pages for Professor Edward Banduk to ensure the organization and availability of course content and assignments.\n• Behaved as first contact for students in the class to provide appropriate resources and/or fulfill course logistical requests.`}
-        link={
-          "https://stevens.smartcatalogiq.com/2022-2023/academic-catalog/courses/cs-computer-science/500/cs-550/"
-        }
-        isLeft={true}
-      />
+      <div className="cards">
+        <MyCard
+          cardTopBackground={"rgba(77, 77, 77, .35)"}
+          leftImage={"/stevens.png"}
+          rightImage={"/tree.png"}
+          title={"Data Structures Course Assistant"}
+          caption={"Stevens Institute of Technology"}
+          subCaption={"Spring 2023"}
+          description={`Operated as a "Data Structures Course Assistant" for Professor Abrar Alrumay.\n\n• Administered weekly recitations for students to reinforce data structures concepts and Java programming skills.\n• Hosted weekly office hours for data structures students to assist with conceptual, assignment, and/or logistical.\n• Assessed assignment submissions for Professor Abrar Alrumayh by performing various testing using JUnit.`}
+          links={[
+            [
+              "Go to Course Page",
+              "https://stevens.smartcatalogiq.com/en/2022-2023/academic-catalog/courses/cs-computer-science/200/cs-284/",
+              "primary",
+            ],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(77, 77, 77, .35)"}
+          leftImage={"/stevens.png"}
+          rightImage={"/python.png"}
+          title={"Introduction to Scientific Computing Course Assistant"}
+          caption={"Stevens Institute of Technology"}
+          subCaption={"Fall 2022, Fall 2021"}
+          description={`Operated as an "Introduction to Scientific Computing Course Assistant" for Professor Edward Banduk.\n\n• Conducted weekly lab sections for students to reinforce basic computing concepts and Python programming skills.\n• Performed walkthroughs of coding exercises to assist students in understanding the practicality and use cases of numerous programming techniques.\n• Presented new class material to students to further their progress in the curriculum.`}
+          links={[
+            [
+              "Go to Course Page",
+              "https://stevens.smartcatalogiq.com/2022-2023/academic-catalog/courses/cs-computer-science/100/cs-105/",
+              "primary",
+            ],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(77, 77, 77, .35)"}
+          leftImage={"/stevens.png"}
+          rightImage={"/cpu.png"}
+          title={"Computer Organization & Programming Teaching Assistant"}
+          caption={"Stevens Institute of Technology"}
+          subCaption={"Spring 2023, Spring 2022"}
+          description={`Operated as a "Computer Organization & Programming Teaching Assistant" for Professor Edward Banduk.\n\n• Managed Canvas pages for Professor Edward Banduk to ensure the organization and availability of course content and assignments.\n• Behaved as first contact for students in the class to provide appropriate resources and/or fulfill course logistical requests.`}
+          links={[
+            [
+              "Go to Course Page",
+              "https://stevens.smartcatalogiq.com/2022-2023/academic-catalog/courses/cs-computer-science/500/cs-550/",
+              "primary",
+            ],
+          ]}
+        />
+      </div>
     </>
   );
 }

@@ -6,8 +6,8 @@ import MyCard from "./MyCard";
 function Music() {
   return (
     <>
-      <img src="dino.gif" />
-      <h1 style={{textAlign: "center"}}>WIP 👀</h1>
+      <img src="dino.gif" style={{ width: "100%" }} />
+      <h1 style={{ textAlign: "center" }}>WIP 👀</h1>
     </>
   );
 }
