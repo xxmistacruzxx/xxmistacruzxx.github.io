@@ -6,7 +6,7 @@ import About from "./About";
 import Code from "./Code";
 import Music from "./Music";
 
-function Overlay({ cameraX, setCameraX }) {
+function Overlay({ setCurrTab }) {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const goToSlide = (slideIndex) => {
@@ -20,13 +20,13 @@ function Overlay({ cameraX, setCameraX }) {
 
     if (e.target.id === "aboutButton") {
       goToSlide(0);
-      setCameraX(-4);
+      setCurrTab(0)
     } else if (e.target.id === "codeButton") {
       goToSlide(1);
-      setCameraX(4);
+      setCurrTab(1)
     } else {
       goToSlide(2);
-      setCameraX(12);
+      setCurrTab(2)
     }
   }
 

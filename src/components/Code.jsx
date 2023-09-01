@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NewlineText from "./newlineText";
 import MyCard from "./MyCard";
 
 function Code() {
@@ -8,6 +7,27 @@ function Code() {
     <>
       <h1>Projects</h1>
       <div className="cards">
+        <MyCard
+          cardTopBackground={"rgba(17, 0, 28, .35)"}
+          leftImage={"/csgologo.png"}
+          rightImage={"/puppeteer.png"}
+          title={"CSView"}
+          caption={"Personal Project"}
+          subCaption={
+            "#next #react #puppeteer #jquery #axios #docker #oraclecloud #csgostats #hltv"
+          }
+          description={
+            "CSView focuses on delivering various tools to CS:GO players, such as player stats search, multi-player game stats search, eSports match monitoring, and crosshair repository. Data is obtained from csgostats.gg and HLTV.\n\nCSView is a Next/React based website deployed using Oracle Cloud and Docker. "
+          }
+          links={[
+            [
+              "Go to Code",
+              "https://github.com/xxmistacruzxx/CSView",
+              "secondary",
+            ],
+            ["Go to Deployment", "http://csview.us.to/", "primary"],
+          ]}
+        />
         <MyCard
           cardTopBackground={"rgba(17, 0, 28, .35)"}
           leftImage={"/coinwizard.png"}
@@ -39,7 +59,7 @@ function Code() {
             "#discord.py #py-cord #requests #cryptocompareapi #blockchainapi #etherscanapi"
           }
           description={
-            "CoinWizard Bot is a Discord Bot with various cryptocurrency related commands, such as real-time market & blockchain viewing, real-time price conversions, and address lookups (for BTC & ETH).\nData is obtained using CryptoCompare API, Blockchain API, and Etherscan API.\n\nCoinWizard Bot is a discord.py/py-cord based Discord Bot."
+            "CoinWizard Bot is a Discord Bot with various cryptocurrency related commands, such as real-time market & blockchain viewing, real-time price conversions, and address lookups (for BTC & ETH).\nData is obtained using CryptoCompare API, Blockchain API, and Etherscan API.\n\nCoinWizard Bot is a discord.py/py-cord based Discord Bot deployed locally on David's home server."
           }
           links={[
             [
@@ -47,6 +67,7 @@ function Code() {
               "https://github.com/xxmistacruzxx/CoinWizardBot",
               "secondary",
             ],
+            ["Go to Deployment", "http://coinwizardbot.us.to/", "primary"]
           ]}
         />
         <MyCard
@@ -56,10 +77,10 @@ function Code() {
           title={"Portfolio Website"}
           caption={"Personal Project"}
           subCaption={
-            "#react #three.js #react-three-fiber #bootstrap #react-bootstrap #jquery #github-pages"
+            "#vite #react #three.js #react-three-fiber #bootstrap #react-bootstrap #jquery #github-pages"
           }
           description={
-            "Personal portfolio website for myself, deployed using Github Pages (you're looking at it!).\n\nUsed as an opportunity to explore various web development libraries and tools such as React, Three.js, and Bootstrap."
+            "Personal portfolio website for myself (you're looking at it!).\n\nUsed as an opportunity to explore various web development libraries and tools such as Vite, React, Three.js, and Bootstrap, deployed using Github Pages."
           }
           links={[
             [
@@ -125,7 +146,7 @@ function Code() {
           links={[
             [
               "Go to Code",
-              "https://github.com/xxmistacruzxx/KeyboardHero",
+              "https://github.com/EllaCrabtree/CS555-Women-in-STEM",
               "secondary",
             ],
             [
@@ -150,7 +171,7 @@ function Code() {
           links={[
             [
               "Go to Code",
-              "https://github.com/xxmistacruzxx/KeyboardHero",
+              "https://github.com/xxmistacruzxx/CS146DCEJCZ",
               "secondary",
             ],
           ]}

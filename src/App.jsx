@@ -4,7 +4,7 @@ import World from "./components/World";
 import Overlay from "./components/Overlay";
 
 function App() {
-  const [cameraX, setCameraX] = useState(-4);
+  const [currTab, setCurrTab] = useState(0);
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <World cameraX={cameraX} setCameraX={setCameraX} windowWidth={windowWidth}/>
-      <Overlay cameraX={cameraX} setCameraX={setCameraX} />
+      <World currTab={currTab} windowWidth={windowWidth}/>
+      <Overlay setCurrTab={setCurrTab} />
     </>
   );
 }

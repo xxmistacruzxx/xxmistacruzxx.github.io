@@ -103,8 +103,24 @@ function About() {
           rightImage={"/python.png"}
           title={"Introduction to Scientific Computing Course Assistant"}
           caption={"Stevens Institute of Technology"}
-          subCaption={"Fall 2022, Fall 2021"}
+          subCaption={"Fall 2023, Fall 2022, Fall 2021"}
           description={`Operated as an "Introduction to Scientific Computing Course Assistant" for Professor Edward Banduk.\n\n• Conducted weekly lab sections for students to reinforce basic computing concepts and Python programming skills.\n• Performed walkthroughs of coding exercises to assist students in understanding the practicality and use cases of numerous programming techniques.\n• Presented new class material to students to further their progress in the curriculum.`}
+          links={[
+            [
+              "Go to Course Page",
+              "https://stevens.smartcatalogiq.com/2022-2023/academic-catalog/courses/cs-computer-science/100/cs-105/",
+              "primary",
+            ],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(77, 77, 77, .35)"}
+          leftImage={"/stevens.png"}
+          rightImage={"/cryptography.png"}
+          title={"Security, Privacy and Society Course Assistant"}
+          caption={"Stevens Institute of Technology"}
+          subCaption={"Fall 2023"}
+          description={`Operated as an "Security, Privacy and Society Course Assistant" for Professor Abrar Alrumay.\n\n• Monitored weekly lab sections where students are assessed on their comprehension of the course topics.\n• Evaluated and provided feedback on student submissions for assignments.`}
           links={[
             [
               "Go to Course Page",
