@@ -14,10 +14,10 @@ function Code() {
           title={"CSView"}
           caption={"Personal Project"}
           subCaption={
-            "#next #react #puppeteer #jquery #axios #docker #oraclecloud #csgostats #hltv"
+            "#next #react #puppeteer #jquery #axios #oraclecloud #googlecloudrun #docker #browserless #csgostats #hltv"
           }
           description={
-            "CSView focuses on delivering various tools to CS:GO players, such as player stats search, multi-player game stats search, eSports match monitoring, and crosshair repository. Data is obtained from csgostats.gg and HLTV.\n\nCSView is a Next/React based website deployed using Oracle Cloud and Docker. "
+            "CSView focuses on delivery utilities to CS:GO players, such as a player stats search, a game/multi-player stats search, an upcoming eSports match listings, and a crosshair repository. Data is obtained from csgostats.gg and HLTV.\n\nCSView is a Next based website deployed using Oracle Cloud and Docker."
           }
           links={[
             [
@@ -25,7 +25,7 @@ function Code() {
               "https://github.com/xxmistacruzxx/CSView",
               "secondary",
             ],
-            ["Go to Deployment", "http://csview.us.to/", "primary"],
+            ["Go to Deployment", "http://csview.k.vu/", "primary"],
           ]}
         />
         <MyCard
@@ -67,7 +67,7 @@ function Code() {
               "https://github.com/xxmistacruzxx/CoinWizardBot",
               "secondary",
             ],
-            ["Go to Deployment", "http://coinwizardbot.us.to/", "primary"]
+            ["Go to Deployment", "http://coinwizardbot.k.vu/", "primary"],
           ]}
         />
         <MyCard
@@ -98,17 +98,14 @@ function Code() {
           title={"Building Inventory System (BIS)"}
           caption={"Web Development I @ Stevens Institute of Technology"}
           subCaption={
-            "#express #mongodb #express-session #handlebars #googlemapsAPI #axios #AJAX #jquery #bcrypt #multer #xss"
+            "#express #mongodb #express-session #handlebars #googlemapsAPI #axios #AJAX #jquery #bcrypt #multer #xss #mongoatlas #googlecloudrun"
           }
           description={
-            "Final project for Professor Patrick Hill's Web Development I (CS546) course at Stevens Institute of Technology. Developed during the Spring 2023 semester.\n\nThe project an inventory management system website, designed to be used both for business and personal use. The main features include basic inventory management capabilities, cross-account sharing/collaboration, and browsing.\n\nThe project is an Express based website that uses MongoDB to store data and Express-Session to handle user sessions."
+            "Final project for Professor Patrick Hill's Web Development I (CS546) course at Stevens Institute of Technology. Developed during the Spring 2023 semester.\n\nThe project an inventory management system website, designed to be used both for business and personal use. The main features include basic inventory management capabilities, cross-account sharing/collaboration, and browsing.\n\nThe project is an Express based website that uses MongoDB to store data. It's deployed using Google Cloud Run and Mongo Atlas."
           }
           links={[
-            [
-              "Go to Code",
-              "https://github.com/twang1905/CS-546-Final-Project",
-              "secondary",
-            ],
+            ["Go to Code", "https://github.com/xxmistacruzxx/BIS", "secondary"],
+            ["Go to Deployment", "http://bis.k.vu/", "primary"],
           ]}
         />
         <MyCard

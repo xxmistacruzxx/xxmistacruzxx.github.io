@@ -38,7 +38,7 @@ function About() {
         </a>
         <a
           id="resumeLink"
-          href="https://drive.google.com/file/d/1ANYVE9pHHH9K74U8HtZmYNOnpWk3dwxN/view?usp=sharing"
+          href="https://www.dropbox.com/scl/fi/2d53sl53z0kl7pyoh18rl/David-Cruz-Resume.pdf?rlkey=wudu3pwt1yyn3vz6x2uy0nbg7&dl=0"
           title="Resume"
           target="_blank"
           rel="noreferrer noopener"
@@ -84,22 +84,6 @@ function About() {
         <MyCard
           cardTopBackground={"rgba(77, 77, 77, .35)"}
           leftImage={"/stevens.png"}
-          rightImage={"/tree.png"}
-          title={"Data Structures Course Assistant"}
-          caption={"Stevens Institute of Technology"}
-          subCaption={"Spring 2023"}
-          description={`Operated as a "Data Structures Course Assistant" for Professor Abrar Alrumay.\n\n• Administered weekly recitations for students to reinforce data structures concepts and Java programming skills.\n• Hosted weekly office hours for data structures students to assist with conceptual, assignment, and/or logistical.\n• Assessed assignment submissions for Professor Abrar Alrumayh by performing various testing using JUnit.`}
-          links={[
-            [
-              "Go to Course Page",
-              "https://stevens.smartcatalogiq.com/en/2022-2023/academic-catalog/courses/cs-computer-science/200/cs-284/",
-              "primary",
-            ],
-          ]}
-        />
-        <MyCard
-          cardTopBackground={"rgba(77, 77, 77, .35)"}
-          leftImage={"/stevens.png"}
           rightImage={"/python.png"}
           title={"Introduction to Scientific Computing Course Assistant"}
           caption={"Stevens Institute of Technology"}
@@ -120,11 +104,27 @@ function About() {
           title={"Security, Privacy and Society Course Assistant"}
           caption={"Stevens Institute of Technology"}
           subCaption={"Fall 2023"}
-          description={`Operated as an "Security, Privacy and Society Course Assistant" for Professor Abrar Alrumay.\n\n• Monitored weekly lab sections where students are assessed on their comprehension of the course topics.\n• Evaluated and provided feedback on student submissions for assignments.`}
+          description={`Operated as an "Security, Privacy and Society Course Assistant" for Professor Abrar Alrumay.\n\n• Monitored weekly lab sections where students are assessed on their comprehension of the course topics.\n• Evaluated and provided feedback on student submissions for assignments.\n• Conducted weekly office hours to aid students with conceptual, assignment, and/or logistical questions.`}
           links={[
             [
               "Go to Course Page",
-              "https://stevens.smartcatalogiq.com/2022-2023/academic-catalog/courses/cs-computer-science/100/cs-105/",
+              "https://iq3.smartcatalogiq.com/en/catalogs/stevens-institution-of-technology/2022-2023/academic-catalog/courses/cs-computer-science/300/cs-396",
+              "primary",
+            ],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(77, 77, 77, .35)"}
+          leftImage={"/stevens.png"}
+          rightImage={"/tree.png"}
+          title={"Data Structures Course Assistant"}
+          caption={"Stevens Institute of Technology"}
+          subCaption={"Spring 2023"}
+          description={`Operated as a "Data Structures Course Assistant" for Professor Abrar Alrumay.\n\n• Administered weekly recitations for students to reinforce data structures concepts and Java programming skills.\n• Hosted weekly office hours for data structures students to assist with conceptual, assignment, and/or logistical.\n• Assessed assignment submissions for Professor Abrar Alrumayh by performing various testing using JUnit.`}
+          links={[
+            [
+              "Go to Course Page",
+              "https://stevens.smartcatalogiq.com/en/2022-2023/academic-catalog/courses/cs-computer-science/200/cs-284/",
               "primary",
             ],
           ]}
