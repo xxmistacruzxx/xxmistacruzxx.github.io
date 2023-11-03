@@ -38,7 +38,7 @@ function About() {
         </a>
         <a
           id="resumeLink"
-          href="https://www.dropbox.com/scl/fi/2d53sl53z0kl7pyoh18rl/David-Cruz-Resume.pdf?rlkey=wudu3pwt1yyn3vz6x2uy0nbg7&dl=0"
+          href="/Resume.pdf"
           title="Resume"
           target="_blank"
           rel="noreferrer noopener"
@@ -47,7 +47,7 @@ function About() {
         </a>
         <a
           id="emailLink"
-          href="mailto: dcruz2@stevens.edu"
+          href="mailto: da.cruz@aol.com"
           title="Send Email"
           target="_blank"
           rel="noreferrer noopener"
