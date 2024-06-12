@@ -123,7 +123,7 @@ function Code() {
               "https://github.com/xxmistacruzxx/CSView",
               "secondary",
             ],
-            ["Go to Deployment", "http://csview.k.vu/", "primary"],
+            ["Go to Deployment", "https://csview.vercel.app/", "primary"],
           ]}
         />
         <MyCard
@@ -165,7 +165,6 @@ function Code() {
               "https://github.com/xxmistacruzxx/CoinWizardBot",
               "secondary",
             ],
-            ["Go to Deployment", "http://coinwizardbot.k.vu/", "primary"],
           ]}
         />
         <MyCard
@@ -203,7 +202,11 @@ function Code() {
           }
           links={[
             ["Go to Code", "https://github.com/xxmistacruzxx/BIS", "secondary"],
-            ["Go to Deployment", "http://bis.k.vu/", "primary"],
+            [
+              "Go to Deployment",
+              "https://bis-tckwrctgwa-uc.a.run.app/",
+              "primary",
+            ],
           ]}
         />
         <MyCard
