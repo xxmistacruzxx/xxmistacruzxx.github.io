@@ -8,7 +8,105 @@ function Code() {
       <h1>Projects</h1>
       <div className="cards">
         <MyCard
-          cardTopBackground={"rgba(17, 0, 28, .35)"}
+          cardTopBackground={"rgba(2, 18, 44, .35)"}
+          leftImage={"/altgenlogo.png"}
+          rightImage={"/python-color.png"}
+          title={"AI for Accessible Alt-Text"}
+          caption={
+            "Senior Design @ Stevens Institute of Technology w/ Free Ebook Foundation"
+          }
+          subCaption={
+            "#python #beautifulsoup4 #ebooklib #pytorch #pypi #hatchling #replicateapi #googlevertexai #tesseract #openaiapi #privategpt #django #djangorestframework #openapi #r"
+          }
+          description={
+            'The "AI for Accessible Alt-Text" project is dedicated towards using current AI technologies, such as machine vision and large language models, to assist in the creation of alternative text for images within Ebooks, pursuing the goal of making Ebooks more accessible.\n\nFor this project, we developed a PyPi package to generate alt-text for images within Ebooks using popular AI services, such as Google AI Platform, Replicate, and OpenAI.\n\nWe also created an OpenAPI documented REST API to wrap this package, allowing for the same functionality to be used in any web accessible technology.'
+          }
+          links={[
+            [
+              "Go to PyPi Package Code",
+              "https://github.com/EbookFoundation/alt-text",
+              "secondary",
+            ],
+            [
+              "Go to API Code",
+              "https://github.com/EbookFoundation/alt-text-backend",
+              "secondary",
+            ],
+            [
+              "Go to PyPi Package",
+              "https://pypi.org/project/alt-text/",
+              "warning",
+            ],
+            [
+              "Go to Free Ebook Foundation",
+              "https://ebookfoundation.org/exploration.html",
+              "primary",
+            ],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(212, 74, 188, .35)"}
+          leftImage={"/genedusa.png"}
+          rightImage={"/tailwind.svg"}
+          title={"GenEdUSA Website"}
+          caption={"Commissioned by GenEdUSA"}
+          subCaption={"#next #react #tailwindcss #nextui #nextthemes #vercel"}
+          description={
+            "GenEdUSA is a commissioned website designed to showcase their mission, background, and services.\n\nGenEdUSA is a Next based website deployed using Vercel."
+          }
+          links={[
+            ["Go to Code", "https://github.com/genedusa/genedusa", "secondary"],
+            ["Go to Deployment", "https://genedusa.com", "primary"],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(226, 61, 40, .35)"}
+          leftImage={"/canvas.png"}
+          rightImage={"/nodejs.png"}
+          title={"Canvas Scraper CLI"}
+          caption={"Personal Project"}
+          subCaption={
+            "#javascript #nodejs #puppeteer #commander #inquirer #canvas"
+          }
+          description={
+            "Canvas Scraper CLI is a command-line tool for scraping and downloading data from Canvas (e.g. assignments and modules).\n\nCanvas Scraper CLI is developed using NodeJS and compiled using Nexe."
+          }
+          links={[
+            [
+              "Go to Code",
+              "https://github.com/xxmistacruzxx/canvas-scraper-cli",
+              "secondary",
+            ],
+            [
+              "Go to Download",
+              "https://github.com/xxmistacruzxx/canvas-scraper-cli/releases",
+              "primary",
+            ],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(255, 255, 255, .35)"}
+          leftImage={"/coursehorse.png"}
+          rightImage={"/typescript.png"}
+          title={"Course Horse"}
+          caption={"Web Development II @ Stevens Institute of Technology"}
+          subCaption={
+            "#typescript #next #react #mongodb #sass #bootstrap #ironsession #jquery #axios #vercel #mongoatlas #docker #dockercompose"
+          }
+          description={
+            "Course Horse is a platform that allows educators to create courses for learners around the world to take asynchronously.\n\nCourse Horse is a Next based website deployed using Vercel and Mongo Atlas."
+          }
+          links={[
+            [
+              "Go to Code",
+              "https://github.com/Course-Horse/course-horse",
+              "secondary",
+            ],
+            ["Go to Deployment", "https://course-horse.vercel.app/", "primary"],
+          ]}
+        />
+        <MyCard
+          cardTopBackground={"rgba(229, 134, 23, .35)"}
           leftImage={"/csgologo.png"}
           rightImage={"/puppeteer.png"}
           title={"CSView"}
@@ -17,7 +115,7 @@ function Code() {
             "#next #react #puppeteer #jquery #axios #oraclecloud #googlecloudrun #docker #browserless #csgostats #hltv"
           }
           description={
-            "CSView focuses on delivery utilities to CS:GO players, such as a player stats search, a game/multi-player stats search, an upcoming eSports match listings, and a crosshair repository. Data is obtained from csgostats.gg and HLTV.\n\nCSView is a Next based website deployed using Oracle Cloud and Docker."
+            "CSView focuses on delivery utilities to CS:GO players, such as a player stats search, a game/multi-player stats search, an upcoming eSports match listings, and a crosshair repository. Data is obtained from csgostats.gg and HLTV.\n\nCSView is a Next based website deployed using Vercel, Google Cloud Run, Docker."
           }
           links={[
             [

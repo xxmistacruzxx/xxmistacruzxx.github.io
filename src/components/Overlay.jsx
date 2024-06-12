@@ -20,13 +20,13 @@ function Overlay({ setCurrTab }) {
 
     if (e.target.id === "aboutButton") {
       goToSlide(0);
-      setCurrTab(0)
+      setCurrTab(0);
     } else if (e.target.id === "codeButton") {
       goToSlide(1);
-      setCurrTab(1)
+      setCurrTab(1);
     } else {
       goToSlide(2);
-      setCurrTab(2)
+      setCurrTab(2);
     }
   }
 
@@ -49,10 +49,10 @@ function Overlay({ setCurrTab }) {
               className="nav-link"
               onClick={navBarButtonAction}
             >
-              Code
+              Projects
             </button>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <button
               id="musicButton"
               className="nav-link"
@@ -60,7 +60,7 @@ function Overlay({ setCurrTab }) {
             >
               Music
             </button>
-          </li>
+          </li> */}
         </ul>
 
         <Carousel

@@ -85,6 +85,35 @@ body {
   font-size: 40px;
 }
 
+#intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+#intro > * {
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#introText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#MeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 #Me {
   border-radius: 50%;
   width: 50%;
@@ -95,8 +124,7 @@ body {
 }
 
 #myName {
-  margin-left: auto;
-  margin-right: auto;
+  align-self: center;
 }
 
 #myLinks {
@@ -152,9 +180,25 @@ body {
   .myCard {
     background-color: rgba(0, 0, 0, 0.4);
   }
+
+  #intro {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 1440px) {
+  #intro {
+    flex-direction: column;
+  }
+
+  #MeContainer {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}
+
+/* @media only screen and (min-width: 600px) {
   .myCard {
     width: 75%;
   }
@@ -165,4 +209,4 @@ body {
     margin-right: 5%;
     margin-left: auto;
   }
-}
+} */

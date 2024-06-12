@@ -57,7 +57,7 @@ function SkySphere({ currTab }) {
   const colors = [
     [0x6eeeff, 0.15592646369776456, 0.85499260812105, 1],
     ["lightblue", 0.4178850708380236, 0.6866853124288865, 0.7912979403281553],
-    [0x1a2324, 0.010329823026364548, 0.01680737574872402, 0.01764195448412081]
+    [0x1a2324, 0.010329823026364548, 0.01680737574872402, 0.01764195448412081],
   ];
   const thisRef = React.useRef();
 
@@ -209,7 +209,7 @@ function World({ currTab, windowWidth }) {
       <Plane currTab={currTab} />
       <Plant />
       <Cpu />
-      <Piano />
+      {/* <Piano /> */}
     </Canvas>
   );
 }
