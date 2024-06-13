@@ -1,10 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Nav } from "react-bootstrap";
 import $ from "jquery";
 import About from "./About";
 import Code from "./Code";
 import Music from "./Music";
+import NewlineText from "./newlineText";
 
 function Overlay({ setCurrTab }) {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -33,35 +34,77 @@ function Overlay({ setCurrTab }) {
   return (
     <>
       <div id="overlay">
-        <ul id="navbar" className="nav nav-pills">
-          <li className="nav-item">
-            <button
+        <div id="intro">
+          <div id="MeContainer">
+            <img id="Me" src="/Me.jpg" />
+            <h1 id="myName">David Cruz</h1>
+            <div id="myLinks">
+              <a
+                id="linkedInLink"
+                href="https://www.linkedin.com/in/davidalexandercruz/"
+                title="LinkedIn"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="/linkedin.png" />
+              </a>
+              <a
+                id="githubLink"
+                href="https://github.com/xxmistacruzxx"
+                title="Github"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="/github.png" />
+              </a>
+              <a
+                id="resumeLink"
+                href="/Resume.pdf"
+                title="Resume"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="/pdf.png" />
+              </a>
+              <a
+                id="emailLink"
+                href="mailto: da.cruz@aol.com"
+                title="Send Email"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="/email.png" />
+              </a>
+            </div>
+          </div>
+          <div id="introText">
+            <p>
+              <NewlineText
+                text={`David is an aspring Software Engineer, receiving his B.S. in Computer Science from Stevens Institute of Technology (Hoboken, NJ) in Spring 2024.\n\nAt Stevens, David developed his passion for UX/UI Design, Web Development, and Database Design & Management through his classes and personal projects.\n\nDavid is also very passionate for music, recently exploring DJing and producing, as well as having a long history with songwriting, singing, and playing piano & guitar.`}
+              />
+            </p>
+          </div>
+        </div>
+        <Nav id="newnavbar" fill variant="tabs" defaultActiveKey="experience">
+          <Nav.Item>
+            <Nav.Link
               id="aboutButton"
-              className="nav-link active"
+              eventKey="experience"
               onClick={navBarButtonAction}
             >
-              About
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
+              Experience
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
               id="codeButton"
-              className="nav-link"
+              eventKey="projects"
               onClick={navBarButtonAction}
             >
               Projects
-            </button>
-          </li>
-          {/* <li className="nav-item">
-            <button
-              id="musicButton"
-              className="nav-link"
-              onClick={navBarButtonAction}
-            >
-              Music
-            </button>
-          </li> */}
-        </ul>
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
 
         <Carousel
           id="carousel"
@@ -82,6 +125,10 @@ function Overlay({ setCurrTab }) {
             <Music />
           </Carousel.Item>
         </Carousel>
+
+        <div id="backtotop">
+          <a href="#intro">⬆ Back to Top ⬆</a>
+        </div>
       </div>
     </>
   );

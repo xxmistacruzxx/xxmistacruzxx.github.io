@@ -39,37 +39,27 @@ body {
   padding-right: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-bottom: 20px;
 }
 
-#navbar {
-  margin-top: 30px;
+#newnavbar {
+  width: 100%;
 }
 
-#navbar * {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#navbar li button {
-  font-weight: bold;
-  transition: background-color 500ms, color 60ms;
-}
-
-#navbar li .nav-link {
-  color: rgb(231, 231, 231);
-}
-
-#navbar li .active {
+#newnavbar a {
   color: white;
 }
 
-#navbar li button:hover {
-  color: white;
+#newnavbar .active {
+  color: black;
 }
 
 #carousel {
   width: 100%;
-  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #carousel * {
@@ -86,12 +76,15 @@ body {
 }
 
 #intro {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.05);
   border: solid 1px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 #intro > * {
@@ -169,12 +162,22 @@ body {
   box-shadow: 0px 0px 10px lightblue;
 }
 
+#backtotop {
+  margin: 5px;
+}
+
+#backtotop a {
+  text-decoration: none;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   #overlay {
     width: 100%;
     margin-left: 0px;
     min-width: 0px;
     background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 60px;
   }
 
   .myCard {
