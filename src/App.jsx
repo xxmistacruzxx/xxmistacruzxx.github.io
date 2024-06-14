@@ -11,15 +11,15 @@ function App() {
     const handleWindowResize = () => {
       setWindowWidth(window.innerWidth);
     };
-    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener("resize", handleWindowResize);
     };
   });
 
   return (
     <>
-      <World currTab={currTab} windowWidth={windowWidth}/>
+      <World currTab={currTab} windowWidth={windowWidth} />
       <Overlay setCurrTab={setCurrTab} />
     </>
   );

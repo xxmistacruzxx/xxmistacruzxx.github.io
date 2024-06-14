@@ -36,7 +36,7 @@ function Overlay({ setCurrTab }) {
       <div id="overlay">
         <div id="intro">
           <div id="MeContainer">
-            <img id="Me" src="/Me.jpg" />
+            <img id="Me" src="/Me.jpg" alt="Headshot" />
             <h1 id="myName">David Cruz</h1>
             <div id="myLinks">
               <a
@@ -46,7 +46,7 @@ function Overlay({ setCurrTab }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/linkedin.png" />
+                <img src="/linkedin.png" alt="LinkedIn Icon" />
               </a>
               <a
                 id="githubLink"
@@ -55,7 +55,7 @@ function Overlay({ setCurrTab }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/github.png" />
+                <img src="/github.png" alt="GitHub Icon" />
               </a>
               <a
                 id="resumeLink"
@@ -64,7 +64,7 @@ function Overlay({ setCurrTab }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/pdf.png" />
+                <img src="/pdf.png" alt="Resume Icon" />
               </a>
               <a
                 id="emailLink"
@@ -73,7 +73,7 @@ function Overlay({ setCurrTab }) {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <img src="/email.png" />
+                <img src="/email.png" alt="Email Icon" />
               </a>
             </div>
           </div>

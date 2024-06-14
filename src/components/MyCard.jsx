@@ -22,7 +22,7 @@ function MyCard({
     leftImageElement = (
       <img
         src={leftImage}
-        alt="card left image"
+        alt="Card Left Image"
         style={{
           marginLeft: "20px",
           marginTop: "10px",
@@ -38,7 +38,7 @@ function MyCard({
     rightImageElement = (
       <img
         src={rightImage}
-        alt="card right image"
+        alt="Card Right Image"
         style={{
           marginRight: "20px",
           marginTop: "10px",
