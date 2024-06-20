@@ -80,7 +80,7 @@ function Overlay({ setCurrTab }) {
           <div id="introText">
             <p>
               <NewlineText
-                text={`David is an aspring Software Engineer, receiving his B.S. in Computer Science from Stevens Institute of Technology (Hoboken, NJ) in Spring 2024.\n\nAt Stevens, David developed his passion for UX/UI Design, Web Development, and Database Design & Management through his classes and personal projects.\n\nDavid is also very passionate for music, recently exploring DJing and producing, as well as having a long history with songwriting, singing, and playing piano & guitar.`}
+                text={`David is an aspiring Software Engineer, receiving his B.S. in Computer Science from Stevens Institute of Technology (Hoboken, NJ) in Spring 2024.\n\nAt Stevens, David developed his passion for UX/UI Design, Web Development, and Database Design & Management through his classes and personal projects.\n\nDavid is also very passionate for music, recently exploring DJing and producing, as well as having a long history with songwriting, singing, and playing piano & guitar.`}
               />
             </p>
           </div>
